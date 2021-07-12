@@ -47,7 +47,7 @@ class PageFetcher(Thread):
                # print('rrr: ', obj_new_url.netloc+obj_new_url.path)
                 
             if obj_new_url.netloc != obj_url.netloc:
-                int_new_depth = 1
+                int_new_depth = 0
             else:
                 int_new_depth = int_depth + 1
 
