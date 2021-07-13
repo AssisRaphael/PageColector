@@ -67,6 +67,7 @@ class PageFetcher(Thread):
                 try:
                     url, depth = next(multi_obj)
                     #print(url)
+                    print(parse.urlunparse(url))
                     self.obj_scheduler.add_new_page(url, depth)
                 except StopIteration:
                     break
